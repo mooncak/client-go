@@ -145,7 +145,7 @@ func (e shortcutExpander) expandResourceShortcut(resource schema.GroupVersionRes
 			}
 		}
 
-		// we didn't find exact match so match on group prefixing. This allows autoscal to match autoscaling
+		// we didn't find exact match so match on group prefixing. This allows autoscale to match autoscaling
 		if len(resource.Group) == 0 {
 			return resource
 		}

@@ -85,7 +85,7 @@ func fakeScaleClient(t *testing.T) (ScalesGetter, []schema.GroupResource) {
 				{Name: "statefulsets/scale", Namespaced: true, Kind: "Scale", Group: "apps", Version: "v1beta1"},
 			},
 		},
-		// test a resource that doesn't exist anywere to make sure we're not accidentally depending
+		// test a resource that doesn't exist anywhere to make sure we're not accidentally depending
 		// on a static RESTMapper anywhere.
 		{
 			GroupVersion: "cheese.testing.k8s.io/v27alpha15",
